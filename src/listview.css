@@ -1,0 +1,149 @@
+.search{
+    width: 490px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid rgba(0,0,0,0.6);
+    margin-top: 50px;
+    padding: 10px;
+    margin-left:20px;
+    border-radius: 10px;
+}
+.search i{
+    text-align: center;
+    margin:7px 10px;
+    font-size: 18px;
+    color: rgba(133, 59, 59, 0.7);
+}
+.search input{
+    outline: none;
+    border: none;
+    height: 25px;
+    padding: 7px;
+    width: 100%;
+}
+
+.listbox{
+    border: 1px solid rgba(0,0,0,0.5);
+    margin:15px;
+    padding:10px;
+    width:500px;
+    border-radius: 10px;
+    height: 70px;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+#listbox{
+    border: none;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+.listbox.expanded {
+    height: 370px; /* Set the desired expanded height here */
+  }
+.listbox .title{
+    display: flex;
+    flex-direction: row;
+}
+.title img{
+    border-radius: 50%;
+    border: 1px solid rgba(0,0,0,.3);
+    object-fit: cover;
+    overflow: hidden;
+    height: 70px;
+    width: 70px;
+}
+.title p{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 30px;
+    width:250px;
+}
+.title h1{
+    font-size: 30px;
+    margin-left: 100px;
+    cursor: pointer;
+}
+.listbox .details{
+    padding: 10px;
+}
+.details span{
+    color:rgba(0,0,0,0.7);
+}
+.details .age{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.age .child{
+    display: flex;
+    flex-direction: column;
+}
+.age .child p{
+    margin-top:0px;
+}
+.age .child input{
+    width: 120px;
+    padding: 5px;
+    height: 20px;
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 10px;   
+}
+.child select{
+    width: 120px;
+    padding: 5px;
+    height: 30px;
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+.description .content{
+    margin-top:-10px;
+    color: black;
+}
+.description textarea{
+    width: 450px;
+    margin-top:-5px;
+    padding:5px;
+    height: 130px;
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+.description p{
+    color:rgba(0,0,0,0.7);
+}
+.details .buttons{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.buttons p{
+    margin:0px 10px;
+}
+.buttons button{
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 50%;
+}
+#delete{
+    font-size: 22px;
+    color: red;
+}
+#edit{
+    font-size: 22px;
+    color:rgb(0, 255, 47);
+}
+#editbox{
+    display:none;
+    position:absolute;
+    margin-top:-450px;
+    width:500px;
+    height:370px;
+    z-index: 100;
+    background-color:rgba(255, 255, 255, 0.37);
+}
+
+textarea {
+    width: 400px;
+    height: 120px;
+    color: #724949;
+}
